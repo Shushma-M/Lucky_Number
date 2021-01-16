@@ -1,5 +1,5 @@
 body{
-    background: url("https://lh3.googleusercontent.com/proxy/hJLQJ650Z1Riji-UrQ-blMcvFQJekUZW3g7fe0ieKupbiDj2GQT9qKflWGSM_3FPS94--jXU7iWmotVAJfBMRza6Nr4E2uytD2AYKHz2O6umNW2tIjHnCjLS21sTEmgnpU6ccAy0aeo") no-repeat center center fixed;
+    background-image: url("images/clover.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 #close{
