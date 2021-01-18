@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 body{
-    background-image: url("images/clover.jpg") no-repeat center center fixed;
+    background: url("clover.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 #close{
@@ -17,13 +19,24 @@ body{
 }
 h1{
     text-align: center;
+    font-family: 'Mystery Quest', cursive;
+    font-size: 70px;
+    color: yellowgreen;
+    margin: 0rem;
+}
+p{
+    text-align: center;
+    color:grey;
+    font-size: 20px;
 }
 .main-module{
     text-align:left;
    background-color: rgb(128, 255, 0, 0.2);
    margin-right: 25%;
    margin-left: 25%;
-   padding: 1rem 0rem 10rem 0rem;
+   padding: 1rem 0rem 5rem 0rem;
+   font-family: 'Berkshire Swash', cursive;
+   font-size: 25px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
  input{
@@ -31,13 +44,34 @@ h1{
     margin-left:10% ;  
 }
 label{
-    margin-left:20% ;
+    margin-left:10% ;
 }
 button{
 margin:auto;
 display: grid;
+background-color: black;
+color:greenyellow;
+border: none;
+padding: 0.5rem 1rem;
+font-size: 20px;
+border-radius: 30%;
 } 
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: green;
+}
+button:disabled{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.ball-display{
+    margin: auto;
+    text-align: center;
+    
+}
 #output{
     text-align: center;
-    margin:2rem;
-}
+    margin:3rem 5rem 0rem 5rem;
+    
+} 
