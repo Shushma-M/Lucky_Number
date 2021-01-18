@@ -11,13 +11,28 @@
     <span>We care about your data privacy. We assure that no data entered on this site is stored </span><span id=close>X</span>
     </div>
     <h1>Lucky Number</h1>
+    <p> Our Magic Ball reveals weather it's your correct lucky number or not !!</p>
     <div class="main-module">
   <label>Birth Date: </label>  
-  <input id=input1 type="date"/> <br/>
+  <input id=input1 type="date" /> <br/>
   <label>Lucky Number: </label>  
   <input id=input2 type="number" min="0" max="10"/> <br/>
-  <button id=btnClick>Submit</button>
-  <div id=output></div>
+  <button disabled="disabled" id=btnClick>Submit</button>
+   <div id=output></div>
+   <div class="ball-display">
+   <svg height="150" width="100">
+    <defs>
+      <filter id="f1" >
+        <feGaussianBlur stdDeviation="6" />
+      </filter> 
+    </defs>
+    <circle id="ball"
+    cx="50" cy="50" r="40" stroke-width="3" filter="url(#f1)"/>
+    <animate id="color" attributeType="CSS" attributeName="fill" from="green" to="red" dur="1s" repeatCount="indefinite" />
+    <rect width="80" height="10" x="10" y="100" stroke-width="3" fill="brown" />
+    <rect width="100" height="10" x="0" y="111" stroke-width="3" fill="brown" />
+  </svg>
+</div>
 </div>
 </body>
 <script src="app.js"></script>
