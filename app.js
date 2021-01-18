@@ -1,17 +1,21 @@
 var ip1=document.querySelector("#input1");
 var ip2=document.querySelector("#input2");
 var clck=document.querySelector("#btnClick");
+var rst=document.querySelector("#reset");
 var cls=document.querySelector("#close");
 var op=document.querySelector("#output");
 var sum=0;
 function enableButton(){
-    console.log(ip1.value);
-    console.log(ip2.value);
     if (ip1.value != "" && ip2.value != "") {
         clck.disabled = false;
+        rst.disabled = false;
     } else {
         clck.disabled = true;
+        rst.disabled = false;
     }
+}
+function eventReset(){
+    location.reload();
 }
 function eventHandler(){
     // document.querySelectorAll("animate").forEach(element => {
@@ -54,3 +58,4 @@ cls.addEventListener("click",closeAction);
 ip1.addEventListener("change", enableButton);
 ip2.addEventListener("change", enableButton);
 clck.addEventListener("click",eventHandler);
+rst.addEventListener("click",eventReset);

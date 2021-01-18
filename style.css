@@ -46,15 +46,19 @@ p{
 label{
     margin-left:10% ;
 }
+.options{
+    margin: auto;
+    text-align: center;
+}
 button{
 margin:auto;
-display: grid;
 background-color: black;
 color:greenyellow;
 border: none;
 padding: 0.5rem 1rem;
 font-size: 20px;
 border-radius: 30%;
+text-align: center;
 } 
 button:hover{
     cursor: pointer;

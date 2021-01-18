@@ -13,12 +13,16 @@
     <h1>Lucky Number</h1>
     <p> Our Magic Ball reveals weather it's your correct lucky number or not !!</p>
     <div class="main-module">
+      
   <label>Birth Date: </label>  
   <input id=input1 type="date" /> <br/>
   <label>Lucky Number: </label>  
   <input id=input2 type="number" min="0" max="10"/> <br/>
-  <button disabled="disabled" id=btnClick>Submit</button>
-   <div id=output></div>
+  <div class="options">
+    <button disabled="disabled" id=btnClick>Submit</button>
+  <button disabled="disabled" id=reset>Reset</button>
+</div> 
+  <div id=output></div>
    <div class="ball-display">
    <svg height="150" width="100">
     <defs>
